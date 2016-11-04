@@ -50,3 +50,5 @@ player.one(startEvent, function() {
     player.ima.requestAds();
     player.play();
 });
+
+setTimeout(function(){player.play()},2000);
