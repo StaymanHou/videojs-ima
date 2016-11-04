@@ -45,10 +45,8 @@ if (navigator.userAgent.match(/iPhone/i) ||
   startEvent = 'touchend';
 }
 
-player.one(startEvent, function() {
-    player.ima.initializeAdDisplayContainer();
-    player.ima.requestAds();
-    player.play();
-});
-
-setTimeout(function(){player.play()},2000);
+setTimeout(function(){
+  player.ima.initializeAdDisplayContainer();
+  player.ima.requestAds();
+  player.play();
+},5000);
